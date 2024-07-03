@@ -1,5 +1,7 @@
 export const GITHUB_URL = "https://github.com/Zarinjahanshazi";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/zarin-shazi/";
+export const EMAIL = "zarinshazi@gmail.com";
+export const PHONE = "+8801756558285";
 export const PERSONAL_WEBSITE_URL = "";
 export const CURRENT_YEAR = new Date().getFullYear().toString();
 export const YOUTUBE_URL = "";
