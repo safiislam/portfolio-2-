@@ -25,12 +25,9 @@ const skills = [
   { id: "css", Component: FaCss3Alt },
   { id: "javascript", Component: SiJavascript },
   { id: "bootstrap", Component: FaBootstrap },
-  { id: "typescript", Component: SiTypescript },
   { id: "react", Component: FaReact },
-  { id: "mui", Component: SiMui },
   { id: "tailwind", Component: SiTailwindcss },
   { id: "node", Component: FaNodeJs },
-  { id: "sql", Component: SiMysql },
   { id: "npm", Component: FaNpm },
   { id: "yarn", Component: SiYarn },
   { id: "mongodb", Component: SiMongodb },
@@ -61,7 +58,7 @@ export default function Skills() {
                 className="text-5xl text-goldDesert transition-all duration-300 transform hover:scale-110 hover:text-darkDesert"
                 key={skills[index].id}
               >
-                <Component />
+                <Component size={"80"} className="animate-pulse" />
               </animated.div>
             );
           })}

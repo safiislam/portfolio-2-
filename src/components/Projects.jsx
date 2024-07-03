@@ -24,18 +24,35 @@ const ProjectModal = ({ project, isOpen, closeModal }) => (
           {project.title}
         </h3>
         <p className="text-darkDesert mb-4">{project.description}</p>
+        <p className="text-darkDesert mb-4"><span className="text-xl font-semibold block">Feature:</span>{project.feature.map((item) => <p>{item}</p>)}</p>
+        <p className="text-darkDesert mb-4"><span className="text-xl font-semibold block">Used Technologies:</span>{project.usedTechnologies.map((item) => <p>{item}</p>)}</p>
+
         <p className="text-darkDesert font-bold mb-4">{project.date}</p>
         <div className="flex justify-between items-center">
-          {project.github ? (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mx-2 text-darkDesert hover:text-goldDesert transition-colors duration-300"
-            >
-              <FaGithub size={32} />
-            </a>
-          ) : null}
+          <div className="flex">
+            {project.github ? (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-2 text-darkDesert hover:text-goldDesert transition-colors duration-300"
+              >
+                <FaGithub size={32} />
+                <span>client</span>
+              </a>
+            ) : null}
+            {project.github_server ? (
+              <a
+                href={project.github_server}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-2 text-darkDesert hover:text-goldDesert transition-colors duration-300"
+              >
+                <FaGithub size={32} />
+                <span>Server</span>
+              </a>
+            ) : null}
+          </div>
           <a
             href={project.deployed}
             target="_blank"
@@ -81,7 +98,7 @@ const ProjectCard = ({ project, openModal }) => {
         </button>
       </div>
     </animated.div>
-  );  
+  );
 };
 
 export default function Projects() {

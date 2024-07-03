@@ -1,21 +1,16 @@
-[{
-  "id": 1,
-  "degree": "Web Development Certificate",
-  "university": "The University of Texas at Austin",
-  "timePeriod": "June 2022 - September 2022",
-  "img": "images/longhorns.jpg"
-},
-{
-  "id": 2,
-  "degree": "M.S. Biological Sciences",
-  "university": "The University of Texas at El Paso",
-  "timePeriod": "August 2014 - May 2017",
-  "img": "images/pick.png"
-},
-{
-  "id": 3,
-  "degree": "B.S. Ecology & Evolutionary Biology",
-  "university": "The University of Texas at El Paso",
-  "timePeriod": "August 2009 - May 2014",
-  "img": "images/pick.png"
-}]
+[
+  {
+    "id": 1,
+    "degree": "Web Development Certificate",
+    "university": "programming-hero",
+    "timePeriod": "January 2024 - August 2024",
+    "img": "images/longhorns.jpg"
+  },
+  {
+    "id": 2,
+    "degree": "B.Sc. in Computer Science and Engineering",
+    "university": "Bangabandhu Sheikh Mujibur Rahman Science and Technology University Majored in Computer Science with a focus on web development and software engineering.",
+    "timePeriod": "August 2019 - May 2024",
+    "img": "images/pick.png"
+  }
+]

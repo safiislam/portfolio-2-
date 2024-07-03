@@ -1,13 +1,13 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiPerplexity } from "react-icons/si";
 import {
   GITHUB_URL,
   LINKEDIN_URL,
   PERSONAL_WEBSITE_URL,
   CURRENT_YEAR,
-  PERPLEXITY_URL,
+  FACEBOOK_URL,
 } from "../constants/index";
+import { FaSquareFacebook } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -21,7 +21,7 @@ export default function Footer() {
             href={PERSONAL_WEBSITE_URL}
             className="hover:text-goldDesert transition-colors duration-300"
           >
-            sarabaqla.dev
+            Zarin.dev
           </a>
         </span>
         <div className="flex mt-2 space-x-6">
@@ -46,10 +46,10 @@ export default function Footer() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={PERPLEXITY_URL}
+            href={FACEBOOK_URL}
             className="text-lightDesert hover:text-goldDesert transition-colors duration-300"
           >
-            <SiPerplexity className="w-5 h-5" />
+            <FaSquareFacebook className="w-5 h-5" />
             <span className="sr-only">Perplexity Referral</span>
           </a>
         </div>

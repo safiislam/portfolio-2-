@@ -35,7 +35,7 @@ export default function NavBar() {
               alt="Sara Dev Logo"
             />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              sarabaqla.dev
+              Zarin.dev
             </span>
           </Link>
           <div className="flex items-center lg:order-2">
@@ -74,9 +74,8 @@ export default function NavBar() {
             </button>
           </div>
           <div
-            className={`${
-              isOpen ? "block" : "hidden"
-            } justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
+            className={`${isOpen ? "block" : "hidden"
+              } justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
@@ -92,9 +91,9 @@ export default function NavBar() {
               <NavLink to="/skills" onClick={toggleOpen}>
                 Skills
               </NavLink>
-              <NavLink to="/experience" onClick={toggleOpen}>
+              {/* <NavLink to="/experience" onClick={toggleOpen}>
                 Experience
-              </NavLink>
+              </NavLink> */}
               <NavLink to="/education" onClick={toggleOpen}>
                 Education
               </NavLink>
